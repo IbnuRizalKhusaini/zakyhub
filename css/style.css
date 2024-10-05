@@ -9097,6 +9097,52 @@ h1, h2, h3, h4, h5,
 textarea.form-control {
   height: inherit !important; }
 
+  .testimony-section {
+    position: relative; }
+    .testimony-section .owl-carousel {
+      margin: 0; }
+    .testimony-section .owl-carousel .owl-stage-outer {
+      padding-bottom: 2em;
+      position: relative; }
+  
+  .testimony-wrap {
+    -webkit-box-shadow: 0px 4px 18px -12px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 4px 18px -12px rgba(0, 0, 0, 0.75);
+    -ms-box-shadow: 0px 4px 18px -12px rgba(0, 0, 0, 0.75);
+    -o-box-shadow: 0px 4px 18px -12px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 4px 18px -12px rgba(0, 0, 0, 0.75);
+    background: #fff;
+    display: block;
+    position: relative; }
+    .testimony-wrap .user-img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin: 0 auto;
+      position: relative; }
+      .testimony-wrap .user-img .quote {
+        position: absolute;
+        bottom: -10px;
+        right: 0;
+        width: 40px;
+        height: 40px;
+        background: #fce7f1;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        border-radius: 50%; }
+        .testimony-wrap .user-img .quote i {
+          color: #ee76ad; }
+    .testimony-wrap .name {
+      font-weight: 500;
+      font-size: 16px;
+      margin-bottom: 0;
+      color: #efac78; }
+    .testimony-wrap .position {
+      font-size: 13px;
+      color: #f4c8a6; }
+  
+
 .ftco-vh-100 {
   height: 100vh; }
   @media (max-width: 1199.98px) {
@@ -9119,6 +9165,12 @@ textarea.form-control {
   border-radius: 5px; }
   .about-author .desc h3 {
     font-size: 24px; }
+
+.ftco-slide {
+       }
+      @media (max-width: 767.98px) {
+        .ftco-slide {
+          visibility: hidden; } }
 
 .ftco-section {
   padding: 7em 0;
