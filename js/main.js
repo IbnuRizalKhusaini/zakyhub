@@ -133,6 +133,9 @@
 	  console.log('show');
 	});
 
+
+
+	
 	// scroll
 	var scrollWindow = function() {
 		$(window).scroll(function(){

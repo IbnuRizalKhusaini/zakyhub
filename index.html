@@ -43,7 +43,8 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-	  
+	
+	
 	  
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
 	    <div class="container">
@@ -512,7 +513,8 @@
           </div>
 
           <div class="col-md-6 d-flex">
-          	<div class="img" style="background-image: url(images/about_2.png);"></div>
+			<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+    		<dotlottie-player src="https://lottie.host/21301e76-789a-4fcf-9f6e-0c55ecc15bae/eg1Hbf4RBa.json" background="transparent" speed="1" style="width: 100%;" loop autoplay></dotlottie-player>
           </div>
         </div>
       </div>
@@ -540,7 +542,7 @@
   
 
   <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+  <div class="loading-screen" style="transform: translate(0px, 100%); z-index: -100;"> <div class="inner"> <div class="text-box"><h3 style="transform: translate(0px, 100%); opacity: 1;">ZakyHub</h3></div><div class="line-frame" style="transform: translate(0px, 100%); opacity: 1;"><div class="line"></div></div></div></div>
 
 
   <script src="js/jquery.min.js"></script>
