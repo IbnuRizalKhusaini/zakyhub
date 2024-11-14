@@ -62,27 +62,7 @@ body {
 [tabindex="-1"]:focus {
   outline: 0 !important; }
 
-  .hero-wrap {
-    width: 100%;
-    height: 100%;
-    position: inherit;
-    z-index: 0; }
-    .hero-wrap .overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      content: '';
-      opacity: .97;
-      background: #ee76ad;
-      background: -moz-linear-gradient(45deg, #ee76ad 0%, #efac78 100%);
-      background: -webkit-gradient(left bottom, right top, color-stop(0%, #ee76ad), color-stop(100%, #efac78));
-      background: -webkit-linear-gradient(45deg, #ee76ad 0%, #efac78 100%);
-      background: -o-linear-gradient(45deg, #ee76ad 0%, #efac78 100%);
-      background: -ms-linear-gradient(45deg, #ee76ad 0%, #efac78 100%);
-      background: linear-gradient(45deg, #ee76ad 0%, #efac78 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#448ef6', endColorstr='#af05a9', GradientType=1 ); }
+  
   
 
 #particles-js {
@@ -8532,31 +8512,129 @@ h1, h2, h3, h4, h5,
   font-size: 24px;
   text-transform: uppercase; }
 
-.hero h3.vr {
-  -webkit-writing-mode: vertical-lr;
-  -ms-writing-mode: tb-lr;
-  writing-mode: vertical-lr;
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
-  text-orientation: sideways;
-  text-align: center;
-  text-orientation: sideways;
-  margin: 0rem;
-  position: absolute;
-  top: 0;
-  left: 4em;
-  height: 100%;
-  text-transform: uppercase;
-  font-weight: 500;
-  letter-spacing: 5px;
-  font-size: 16px;
-  z-index: 1;
-  color: rgba(0, 0, 0, 0.3); }
+
   @media (max-width: 1199.98px) {
     .hero h3.vr {
       opacity: 0;
       display: none; } }
+
+_____________
+
+      .hero {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+      }
+      
+      .hero .container .content {
+        display: flex;
+      }
+      
+      .hero .container .content .left-side {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+        width: 50%;
+      }
+      
+      .hero .container .content .left-side h3 {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 1.7rem;
+        font-weight: 500;
+        width: 50%;
+        color: #7a7a7a;
+      }
+      
+      .hero .container .content .left-side h3 hr {
+        width: 7%;
+        padding: 1.5px;
+        margin-top: 4px;
+        background-color: #7a7a7a;
+        border: none;
+      }
+      
+      .hero .container .content .left-side h1 {
+        font-weight: bold;
+        font-size: 3rem;
+        line-height: 4.5rem;
+      }
+      
+      .hero .container .content .left-side h1 .text-background {
+        position: relative;
+        font-weight: bold;
+        font-size: 3rem;
+        font-style: italic;
+        padding: 4px 8px 8px 8px;
+        color: #000;
+        border-radius: 8px;
+      }
+      
+      .hero .container .content .left-side h1 .text-background::before {
+        content: "";
+        display: block;
+        background-color: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        animation: text-background 1.5s;
+        animation-delay: 0.5s;
+        z-index: -1;
+      }
+      
+      .hero .container .content .left-side .action {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        width: 75%;
+      }
+      
+      .hero .container .content .left-side .action button {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 1.2rem;
+        padding: 0.9rem 1.5rem;
+        border: 2px solid #fff;
+        border-radius: 24px;
+        color: #fff;
+        background-color: #000;
+      }
+      
+      .hero .container .content .left-side .action button:hover .arrow {
+        animation: shake 0.3s linear;
+      }
+      
+      .hero .container .content .left-side .action a {
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: #fff;
+      }
+      
+      .hero .container .content .left-side .action a:hover {
+        text-decoration: underline;
+      }
+      
+      .hero .container .content .right-side {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+      }
+      
+      .hero .container .content .right-side img {
+        width: 100%;
+        height: 100%;
+        transform: scale(1.2);
+      }
+______      
+
 
 .owl-carousel {
   position: relative; }
@@ -8793,23 +8871,7 @@ h1, h2, h3, h4, h5,
         .owl-carousel.home-slider .owl-dots .owl-dot.active {
           background: #fff; }
 
-.hero-wrap {
-  width: 100%;
-  height: 100%;
-  margin-top: 50px;
-  margin-bottom: 0px;
-  position: inherit;
-  background-size: cover;
-  background-repeat: no-repeat; }
-  .hero-wrap .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    content: '';
-    opacity: 0;
-    background: #000000; }
+
 
 __________________________________________
 

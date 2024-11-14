@@ -23,6 +23,14 @@
 	<link rel="manifest" href="/images/favicon/site.webmanifest">
     
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
@@ -66,15 +74,38 @@
 	    </div>
 	  </nav>
 	  <section id="home-section ">
-		<div class="hero-wrap">
-			<svg viewBox="0 0 1320 300">
-				<text x="50%" y="50%" text-anchor="middle">
-					ZAKY
-				</text>
-			</svg>	
-	    </div>
-
-	      
+		<section class="hero mt-5 p-4">
+			<div class="container">
+			  <div class="content">
+				<div class="left-side">
+				  
+				  <h1 data-aos="fade-right" data-aos-delay="300">
+					Expanding Your Horizons<br />
+					with <span class="text-background">Effortless Access</span>
+				  </h1>
+	  
+				  <div class="action">
+					<button data-aos="fade-up-right" data-aos-delay="200">
+					  Begin Your Journey
+					  <box-icon
+						name="arrow-back"
+						class="arrow"
+						rotate="180"
+						color="#fff"
+					  ></box-icon>
+					</button>
+					<a data-aos="fade-up-right" data-aos-delay="300" href="#"
+					  >Learn More?</a
+					>
+				  </div>
+				</div>
+	  
+				<div data-aos="zoom-in-left" data-aos-delay="200" class="right-side">
+				  <img src="images/bg_1.png" alt="Zaky" />
+				</div>
+			  </div>
+			</div>
+		  </section>	      
     </section>
 
     <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
@@ -529,6 +560,11 @@
   <script src="js/particles.min.js"></script>
   <script src="js/particle.js"></script>
   <script src="js/google-map.js"></script>
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+	AOS.init();
+  </script>
     
   </body>
 </html>
